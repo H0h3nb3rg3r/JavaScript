@@ -12,4 +12,8 @@ let produto3 = new Pessoa("Table",1500,2);
 let carrinho1 = new Carrinho(pessoa1);
 let carrinho2 = new Carrinho(pessoa2);
 
- 
+carrinho1.addProduto(produto3);
+carrinho1.addProduto(produto2);
+
+carrinho2.addProduto(produto1);
+carrinho2.addProduto(produto2);
