@@ -1,6 +1,6 @@
-import {Pessoa} from "./pessoa.js";
-import { Produto } from "./ex_casa/produto.js";
-import {Carrinho} from "./ex_casa/carrinho.js";
+import {Pessoa} from "../pessoa.js";
+import { Produto } from "../ex_casa/produto.js";
+import {Carrinho} from "../ex_casa/carrinho.js";
 
 let pessoa1 = new Pessoa("Jackson Five", 38, "49 8800-5500");
 let pessoa2 = new Pessoa("Chaves",8,"49 3300-1100");
@@ -17,3 +17,6 @@ carrinho1.addProduto(produto2);
 
 carrinho2.addProduto(produto1);
 carrinho2.addProduto(produto2);
+
+carrinho1.exibirResumo();
+carrinho2.exibirResumo();
