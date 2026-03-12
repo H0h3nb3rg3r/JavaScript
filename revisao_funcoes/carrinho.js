@@ -27,4 +27,9 @@ export class Carrinho{
           })  
         console.log("Total: R$"+this.calcularTotal().toFixed(2));
     }
+    filtroPorPreco(precoMinimo){
+        return this.itens.filter(function(produto){
+            return produto.preco >= precoMinimo;
+        });
+    }
 }
